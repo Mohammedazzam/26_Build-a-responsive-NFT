@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;800&family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+/* font-family: 'Be Vietnam Pro', sans-serif; */
+
+
+/* Custom properties */
+:root {
+    --light-clr: hsl(0, 0%, 100%);
+    --dark-clr: hsl(223, 12%, 11%);
+    --accent-clr: hsl(52, 100%, 97%);
+    --pink-clr: hsl(340, 96%, 62%);
+    --yellow-clr: hsl(50, 100%, 72%);
+    --nav-height: 1.8rem;
+    --number-of-columns: 4;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 800;
+}
+
+@media screen and (min-width: 48em) {
+    :root {
+        --number-of-columns:8
+    }
+}
+@media screen and (min-width: 64em) {
+    :root {
+        --number-of-columns:12
+    }
+}
+/* Reset */
+
+*,
+*::before,
+*::affter {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--dark-clr);
+
+}
+@media screen and (min-width: 48em) {
+    :root {
+        font-size: 1.6rem;
+    }
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img,picture{
+    display: block;
+    max-width: 100%;
+}
+input,button{
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+i {
+    font-style: 2.4rem;
+    line-height: 2.4rem;
+}
+
+section{
+    overflow: hidden;
+}
+
+/* Reusable classes */
+
+/* Header */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--nav-height);
+}
+.nav__overlay{
+    
+}
